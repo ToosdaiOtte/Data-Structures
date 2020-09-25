@@ -34,7 +34,7 @@ class Stack:
         return self.storage.pop()        
 
 # stack with linkedlist
-class LL:
+class Stack:
     def __init__(self):
         self.size = 0
         # assigning storage to linkedlist
@@ -52,5 +52,4 @@ class LL:
         if self.size == 0:
             return None
         # list with elements
-        else:
-            return self.storage.remove_head()
+        return self.storage.remove_tail()
