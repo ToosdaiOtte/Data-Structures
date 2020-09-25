@@ -31,6 +31,7 @@ class Stack:
     def pop(self):
         if len(self.storage) == 0:
             return None
+        self.size -= 1
         return self.storage.pop()        
 
 # stack with linkedlist
@@ -52,4 +53,5 @@ class Stack:
         if self.size == 0:
             return None
         # list with elements
+        self.size -=1
         return self.storage.remove_tail()

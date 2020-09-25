@@ -36,7 +36,9 @@ class Queue:
         # empty queue
         if self.size == 0:
             return None
-        # non empty queue, pop/remove first element
+        # non empty queue, update size
+        self.size -= 1
+        # pop/remove first element
         return self.storage.pop(0)
 
 # queue with linked list
@@ -55,6 +57,8 @@ class Queue:
     def dequeue(self):
         if self.size == 0:
             return None
+
+        self.size -= 1
         return self.storage.remove_head()
 
     
